@@ -1,7 +1,14 @@
+:root {
+    --pad-left: 30px;
+    --body-bg: #f3f3f3;
+    --bgimg-tone: #596d48;
+    --bordercolor: #e5e7eb;
+}
+
 body {
     display: flex;
     margin: 0;
-    align-items: center;
+    background-color: var(--body-bg);
 }
 
 #left-section {
@@ -33,4 +40,54 @@ body {
     text-align: center;
     bottom: 2%;
     width: 100%;
+}
+
+#main-text {
+    font-weight: bold;
+    padding: 120px 120px 26px var(--pad-left);
+    background-color: var(--body-bg);
+}
+
+form {
+    padding: 20px 30px 20px var(--pad-left);
+    background-color: white;
+    position: relative;
+}
+
+fieldset {
+    border: none;
+    padding-left: 0;
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    position: absolute;
+    top: 110%;
+}
+
+button[type="submit"] {
+    background-color: var(--bgimg-tone);
+    color: white;
+    padding: 8px 38px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border-color: var(--bordercolor);
+}
+
+#submit a {
+    color: var(--bgimg-tone);
+    text-decoration: none;
 }

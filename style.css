@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+#left-section {
+    height: 100vh;
+    min-width: 400px;
+    color: white;
+    position: relative;
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    background-color: #00000080;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    font-size: xxx-large;
+    padding: 25px 0;
+}
+
+#credit {
+    font-size: small;
+    position: absolute;
+    text-align: center;
+    bottom: 2%;
+    width: 100%;
+}

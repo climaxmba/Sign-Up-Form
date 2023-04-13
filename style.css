@@ -13,8 +13,8 @@ body {
 }
 
 #left-section {
-    height: 100vh;
-    min-width: 400px;
+    height: 115vh;
+    min-width: 350px;
     color: white;
     position: relative;
     background: url(img/background.jpg) no-repeat;
@@ -29,7 +29,7 @@ body {
     gap: 8px;
     background-color: #00000080;
     position: relative;
-    top: 25%;
+    top: 20%;
     width: 100%;
     font-size: xxx-large;
     padding: 25px 0;
@@ -45,7 +45,8 @@ body {
 
 #main-text {
     font-weight: bold;
-    padding: 100px 0 26px var(--pad-left);
+    font-size: large;
+    padding: 12% 0 28px var(--pad-left);
     background-color: var(--body-bg);
 }
 
@@ -63,8 +64,7 @@ fieldset {
     padding-left: 0;
     display: grid;
     gap: 20px 40px;
-    grid-template-columns: 1fr 1fr;
-    max-width: 450px;
+    grid-template-columns: 200px 200px;
 }
 
 legend {
@@ -76,6 +76,7 @@ legend {
 fieldset > div {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 label {
@@ -101,7 +102,7 @@ input:focus {
 
 #submit {
     position: absolute;
-    top: 110%;
+    top: 112%;
 }
 
 button[type="submit"] {

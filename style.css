@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, sans-serif;
     display: flex;
     margin: 0;
     background-color: var(--body-bg);
@@ -45,14 +45,17 @@ body {
 
 #main-text {
     font-weight: bold;
-    padding: 120px 120px 26px var(--pad-left);
+    padding: 100px 0 26px var(--pad-left);
     background-color: var(--body-bg);
 }
 
 form {
-    padding: 20px 30px 20px var(--pad-left);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: var(--pad-left);
     background-color: white;
     position: relative;
+    box-shadow: 0px 5px 5px #97979780;
 }
 
 fieldset {
@@ -61,7 +64,7 @@ fieldset {
     display: grid;
     gap: 20px 40px;
     grid-template-columns: 1fr 1fr;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 legend {
@@ -80,6 +83,22 @@ label {
     letter-spacing: 1.5px;
 }
 
+input,
+input:indeterminate {
+    border: 1px solid #e5e7eb;
+    border-radius: 3px;
+    padding: 4px 6px;
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid royalblue;
+    border: none;
+}
+
 #submit {
     position: absolute;
     top: 110%;
@@ -90,8 +109,10 @@ button[type="submit"] {
     color: white;
     padding: 8px 38px;
     margin-bottom: 24px;
+    border-width: 0;
     border-radius: 5px;
     border-color: var(--bordercolor);
+    box-shadow: 0px 1px 5px #80808080;
 }
 
 #submit a {

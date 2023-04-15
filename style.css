@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --pad-left: 30px;
     --body-bg: #f3f3f3;
     --bgimg-tone: #596d48;
     --bordercolor: #e5e7eb;
+    --body-font: 'Alegreya', serif;
+    --logo-font: 'Aladin', cursive, serif;
 }
 
 body {
-    font-family: Calibri, sans-serif;
+    font-family: var(--body-font);
     display: flex;
     margin: 0;
     background-color: var(--body-bg);
@@ -14,7 +18,7 @@ body {
 
 #left-section {
     height: 115vh;
-    min-width: 350px;
+    min-width: 380px;
     color: white;
     position: relative;
     background: url(img/background.jpg) no-repeat;
@@ -29,14 +33,15 @@ body {
     gap: 8px;
     background-color: #00000080;
     position: relative;
-    top: 20%;
+    top: 18%;
     width: 100%;
     font-size: xxx-large;
     padding: 25px 0;
+    font-family: var(--logo-font);
 }
 
 img {
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
@@ -44,6 +49,7 @@ img {
     font-size: small;
     position: absolute;
     text-align: center;
+    letter-spacing: 1px;
     bottom: 2%;
     width: 100%;
 }
@@ -51,7 +57,7 @@ img {
 #main-text {
     font-weight: bold;
     font-size: large;
-    padding: 12% 0 28px var(--pad-left);
+    padding: 8% 0 28px var(--pad-left);
     background-color: var(--body-bg);
 }
 
@@ -94,6 +100,7 @@ input:indeterminate {
     border: 1px solid #e5e7eb;
     border-radius: 3px;
     padding: 4px 6px;
+    font-family: var(--body-font);
 }
 
 input:invalid {
@@ -112,6 +119,7 @@ input:focus {
 
 button,
 button:disabled {
+    font-family: var(--body-font);
     background-color: var(--bgimg-tone);
     color: white;
     padding: 8px 38px;

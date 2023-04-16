@@ -116,6 +116,18 @@ input:focus {
     border: none;
 }
 
+div.do-not-match::after {
+    content: 'password do not match';
+    color: red;
+    font-size: small;
+}
+
+div.less-than-eight-char::after {
+    content: 'password should not be less than 8 characters';
+    color: red;
+    font-size: small;
+}
+
 #submit {
     position: absolute;
     top: 112%;

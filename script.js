@@ -10,7 +10,6 @@ for (let i = 0; i < inputs.length; i++) {
             if ((firstPass.value == secondPass.value) && firstPass.value.length >= 8) {
                 container.classList.value = 'valid';
                 submtBtn.disabled = false;
-                return;
             } else if (firstPass.value != secondPass.value) {
                 container.classList.value = 'do-not-match';
                 submtBtn.disabled = true;

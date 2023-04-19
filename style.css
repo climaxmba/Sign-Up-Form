@@ -38,6 +38,7 @@ body {
     top: 18%;
     width: 100%;
     font-size: 3rem;
+    line-height: 0.8;
     padding: 25px 0;
     font-family: var(--logo-font);
 }
@@ -164,4 +165,49 @@ button:disabled {
 #submit a {
     color: var(--bgimg-tone);
     text-decoration: none;
+}
+
+@media (max-width: 900px) and (orientation: portrait) {
+    #logo {
+        text-align: left;
+    }
+}
+
+@media (max-width: 725px) and (orientation: portrait) {
+    :root {
+        --pad-left: 8px;
+    }
+
+    body {
+        display: block;
+        height: unset;
+    }
+
+    #logo {
+        background-color: unset;
+        padding: 50px 0;
+    }
+    
+    #submit {
+        padding-bottom: 15%;
+    }
+}
+
+@media (max-width: 475px) and (orientation: portrait) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    body {
+        height: 250vh;
+    }
+}
+
+@media (max-height: 250px) and (orientation: landscape) {
+    body {
+        height: 350vh;
+    }
 }

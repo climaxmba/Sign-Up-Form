@@ -67,13 +67,12 @@ img {
     font-weight: bold;
     font-size: large;
     padding: 8% 0 28px var(--pad-left);
-    margin-right: 3em;
+    margin-right: 18%;
     background-color: var(--body-bg);
 }
 
 form {
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 0;
     padding-left: var(--pad-left);
     background-color: white;
     position: relative;
@@ -126,13 +125,13 @@ input:focus {
 div.do-not-match::after {
     content: 'password do not match';
     color: red;
-    font-size: small;
+    font-size: medium;
 }
 
 div.less-than-eight-char::after {
     content: 'password should not be less than 8 characters';
     color: red;
-    font-size: small;
+    font-size: medium;
 }
 
 #submit {

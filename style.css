@@ -14,11 +14,13 @@ body {
     display: flex;
     margin: 0;
     background-color: var(--body-bg);
+    height: 130vh;
+    justify-content: center;
+    align-items: stretch;
 }
 
 #left-section {
-    height: 120vh;
-    min-width: 380px;
+    flex: 1 1 380px;
     color: white;
     position: relative;
     background: url(img/background.jpg) no-repeat;
@@ -35,7 +37,7 @@ body {
     position: relative;
     top: 18%;
     width: 100%;
-    font-size: xxx-large;
+    font-size: 3rem;
     padding: 25px 0;
     font-family: var(--logo-font);
 }
@@ -57,10 +59,15 @@ img {
     color: white;
 }
 
+#right-section {
+    flex: 1 2 880px;
+}
+
 #main-text {
     font-weight: bold;
     font-size: large;
     padding: 8% 0 28px var(--pad-left);
+    margin-right: 3em;
     background-color: var(--body-bg);
 }
 

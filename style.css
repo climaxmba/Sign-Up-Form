@@ -139,8 +139,7 @@ div.less-than-eight-char::after {
     top: 112%;
 }
 
-button,
-button:disabled {
+button {
     font-family: var(--body-font);
     background-color: var(--bgimg-tone);
     color: white;
@@ -150,6 +149,16 @@ button:disabled {
     border-radius: 5px;
     border-color: var(--bordercolor);
     box-shadow: 0px 1px 5px #80808080;
+}
+
+button:active,
+button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .8;
 }
 
 #submit a {
